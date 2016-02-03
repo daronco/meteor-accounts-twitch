@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'alexbeauchemin:accounts-twitch',
-  version: '1.0.3',
+  name: 'daronco:accounts-twitch',
+  version: '1.1.0',
   summary: 'A login service for Twitch',
-  git: 'https://github.com/AlexBeauchemin/meteor-accounts-twitch',
+  git: 'https://github.com/daronco/meteor-accounts-twitch',
   documentation: 'README.md'
 });
 
@@ -22,9 +22,9 @@ Package.onUse(function(api) {
   api.use('random', 'client');
   api.use('service-configuration', ['client', 'server']);
 
+  api.addFiles("accounts-twitch.js");
   api.addFiles('accounts-twitch-client.js', 'client');
   api.addFiles('accounts-twitch-server.js', 'server');
-  api.addFiles("accounts-twitch.js");
 
   api.export('TwitchAccounts');
 
