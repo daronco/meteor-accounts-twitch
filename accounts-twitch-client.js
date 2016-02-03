@@ -1,5 +1,3 @@
-TwitchAccounts = {};
-
 TwitchAccounts.requestCredential = function (options, credentialRequestCompleteCallback) {
     if (!credentialRequestCompleteCallback && typeof options === 'function') {
         credentialRequestCompleteCallback = options;

@@ -1,3 +1,5 @@
+TwitchAccounts = {};
+
 if (!isTwitchRegistered) Accounts.oauth.registerService('twitch');
 isTwitchRegistered = true;
 

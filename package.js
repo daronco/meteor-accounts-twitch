@@ -13,6 +13,8 @@ Package.onUse(function(api) {
   api.imply('accounts-base');
   api.use('accounts-oauth', ['client', 'server']);
   api.imply('accounts-oauth');
+  api.use('http', ['client', 'server']);
+  api.imply('http');
 
   api.use('oauth', ['client', 'server']);
   api.use('oauth2', ['client', 'server']);
